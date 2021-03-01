@@ -1,0 +1,32 @@
+package gui;
+
+import javax.swing.JTextArea;
+
+import weather.WeatherDatum;
+import weather.WeatherObserver;
+
+public class WeatherBoard extends javax.swing.JTextArea implements WeatherObserver
+{
+
+  private static final long serialVersionUID = 1L;
+
+  public WeatherBoard()
+  {
+
+  }
+
+  @Override
+  public void handleWeatherDatum(WeatherDatum datum)
+  {
+    // TODO Auto-generated method stub
+
+  }
+
+  @Override
+  public void reset()
+  {
+    // TODO Auto-generated method stub
+
+  }
+
+}

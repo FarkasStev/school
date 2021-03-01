@@ -1,0 +1,39 @@
+package weatherbitmaps;
+
+import javax.swing.JComponent;
+
+import gui.WeatherBoard;
+import weather.WeatherObserver;
+
+public class TextApplication extends WeatherBitmapsApplication
+{
+  private WeatherBoard weatherBoard;
+
+  public TextApplication(int width, int height)
+  {
+    super(width, height);
+    // TODO Auto-generated constructor stub
+  }
+
+  protected JComponent getGUIComponent()
+  {
+    return null;
+  }
+
+  protected WeatherObserver getWeatherObserver()
+  {
+    return null;
+  }
+
+  /**
+   * The explicit value constructor is passed the command-line arguments. It must pass them to its
+   * arent's constructor. It must then perform any necessary non-GUI-related initializations.
+   * (Remember that GUI-related initializations must be performed in the init() method.).
+   * 
+   * @param args from command line
+   */
+  public static void main(String[] args)
+  {
+
+  }
+}

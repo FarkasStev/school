@@ -1,0 +1,81 @@
+package testing;
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class TempuratureTest
+{
+
+  @Test
+  void testTempurature()
+  {
+    fail("Not yet implemented");
+  }
+
+  @Test
+  void testTempuratureTempurature()
+  {
+    fail("Not yet implemented");
+  }
+
+  @Test
+  void testTempuratureDouble()
+  {
+    fail("Not yet implemented");
+  }
+
+  @Test
+  void testTempuratureDoubleString()
+  {
+    fail("Not yet implemented");
+  }
+
+  @Test
+  void testTempuratureDoubleScale()
+  {
+    fail("Not yet implemented");
+  }
+
+  @Test
+  void testCreateTempurature()
+  {
+    fail("Not yet implemented");
+  }
+
+  @Test
+  void testCompareTo()
+  {
+    fail("Not yet implemented");
+  }
+
+  @Test
+  void testDecreaseBy()
+  {
+    fail("Not yet implemented");
+  }
+
+  @Test
+  void testFromString()
+  {
+    fail("Not yet implemented");
+  }
+
+  @Test
+  void testIncreaseBy()
+  {
+    fail("Not yet implemented");
+  }
+
+  @Test
+  void testToString()
+  {
+    fail("Not yet implemented");
+  }
+
+  @Test
+  void testToStringScale()
+  {
+    fail("Not yet implemented");
+  }
+
+}

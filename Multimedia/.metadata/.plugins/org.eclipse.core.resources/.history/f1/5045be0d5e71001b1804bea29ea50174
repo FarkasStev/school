@@ -1,0 +1,34 @@
+package weatherbitmaps;
+
+import javax.swing.JComponent;
+
+import gui.WeatherBoard;
+import weather.WeatherObserver;
+
+public class TextApplication extends WeatherBitmapsApplication
+{
+  private WeatherBoard weatherBoard;
+  
+  
+
+  public TextApplication(int width, int height)
+  {
+    super(width, height);
+    // TODO Auto-generated constructor stub
+  }
+
+   protected JComponent getGUIComponent()
+   {
+     return null;
+   }
+   
+   protected WeatherObserver getWeatherObserver()
+   {
+     return null;
+   }
+   
+   public Static void main(String[] args)
+   {
+     
+   }
+}

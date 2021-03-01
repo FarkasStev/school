@@ -1,0 +1,57 @@
+package weatherbitmaps;
+
+import javax.swing.JComponent;
+
+import app.JApplication;
+import gui.WeatherBoard;
+import weather.WeatherObserver;
+
+/**
+ * @author funny
+ *
+ */
+public class TextApplication extends WeatherBitmapsApplication
+{
+  private WeatherBoard weatherBoard;
+
+  /**
+   * The explicit value constructor is passed the command-line arguments. It must pass them to its
+   * parent’s constructor. It must then construct the WeatherBoard attribute.
+   * 
+   * @param args
+   */
+  public TextApplication(String[] args)
+  {
+    super(args);
+    weatherBoard = new WeatherBoard();
+  }
+
+  /**
+   * Must return the WeatherBoard attribute.
+   */
+  protected JComponent getGUIComponent()
+  {
+    return weatherBoard;
+  }
+
+  /**
+   * Must return the WeatherBoard attribute.
+   */
+  protected WeatherObserver getWeatherObserver()
+  {
+    return weatherBoard;
+  }
+
+  /**
+   * In keeping with the application multimedia framework being used, this method must be
+   * implemented as follows:
+   * 
+   * @param args
+   */
+  public static void main(String[] args)
+  {
+    JApplication app = new TextApplication(args);
+    invokeInEventDispatchThread(app);
+
+  }
+}

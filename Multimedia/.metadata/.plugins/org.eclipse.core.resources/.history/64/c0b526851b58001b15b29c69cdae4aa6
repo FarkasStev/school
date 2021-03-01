@@ -1,0 +1,106 @@
+package testing;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+import measurments.Scale;
+import measurments.Tempurature;
+
+class TempuratureTest
+{
+
+  @Test
+  void testTempurature()
+  {
+    Tempurature temp = new Tempurature();
+    assertEquals("  +0.0F", temp.toString());
+  }
+
+  @Test
+  void testTempuratureTempurature()
+  {
+    Tempurature temp = new Tempurature();
+    Tempurature other = new Tempurature(temp);
+    assertEquals("  +0.0F", other.toString());
+  }
+
+  @Test
+  void testTempuratureDouble()
+  {
+    Tempurature temp = new Tempurature(20.0);
+    assertEquals(" +20.0F", temp.toString());
+  }
+
+  @Test
+  void testTempuratureDoubleString()
+  {
+    Tempurature temp = new Tempurature(20.0, "F");
+    assertEquals(" +20.0F", temp.toString());
+  }
+
+  @Test
+  void testTempuratureDoubleScale()
+  {
+    Tempurature temp = new Tempurature(20.0, Scale.F);
+    assertEquals(" +20.0F", temp.toString());
+  }
+
+  @Test
+  void testCreateTempurature()
+  {
+    Tempurature temp = Tempurature.createTempurature("+108.1F");
+    assertEquals("+108.1F", temp.toString());
+  }
+
+  @Test
+  void testCompareTo()
+  {
+    Tempurature far = Tempurature.createTempurature("+108.1F");
+    Tempurature cel = Tempurature.createTempurature("  +0.0C");
+    assertEquals(1, far.compareTo(cel));
+  }
+
+  @Test
+  void testDecreaseBy()
+  {
+    Tempurature far0 = Tempurature.createTempurature("+108.1F");
+    Tempurature far1 = Tempurature.createTempurature("  +1.0F");
+    far0.decreaseBy(far1);
+    assertEquals("+107.1F", far0.toString());
+  }
+
+  @Test
+  void testFromString()
+  {
+    Tempurature temp = new Tempurature();
+    temp.fromString("+108.1F");
+    assertEquals("+108.1F", temp.toString());
+  }
+
+  @Test
+  void testIncreaseBy()
+  {
+    Tempurature far0 = Tempurature.createTempurature("+108.1F");
+    Tempurature far1 = Tempurature.createTempurature("  +1.0F");
+    far0.increaseBy(far1);
+    assertEquals("+109.1F", far0.toString());
+  }
+
+  @Test
+  void testToString()
+  {
+    Tempurature temp = new Tempurature();
+    assertEquals("  +0.0F", temp.toString());
+  }
+
+  @Test
+  void testToStringScale()
+  {
+    Tempurature temp = new Tempurature();
+    assertEquals("  +0.0F", temp.toString(Scale.F));
+    assertEquals("  +0.0C", temp.toString(Scale.C));
+  }
+
+}

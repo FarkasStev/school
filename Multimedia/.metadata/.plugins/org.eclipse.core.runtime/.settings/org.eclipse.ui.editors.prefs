@@ -1,0 +1,17 @@
+AbstractTextEditor.Color.Background.SystemDefault=false
+AbstractTextEditor.Color.SelectionBackground.SystemDefault=false
+AbstractTextEditor.Color.SelectionForeground.SystemDefault=false
+eclipse.preferences.version=1
+fullcoverage_color=0,255,0
+fullcoverage_highlight=false
+fullcoverage_stylePreferences=DASHED_BOX
+net.sf.eclipsecs.error.text.style=NONE
+net.sf.eclipsecs.info.text.style=NONE
+net.sf.eclipsecs.warning.color=255,255,0
+net.sf.eclipsecs.warning.highlight=false
+net.sf.eclipsecs.warning.text=true
+net.sf.eclipsecs.warning.text.style=DASHED_BOX
+nocoverage_highlight=false
+nocoverage_stylePreferences=DASHED_BOX
+partialcoverage_highlight=false
+partialcoverage_stylePreferences=DASHED_BOX

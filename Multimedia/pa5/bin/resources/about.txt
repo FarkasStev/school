@@ -1,0 +1,16 @@
+WeatherBits is one of several fictitious companies 
+created by Prof. David Bernstein, now a member of 
+the Computer Science Department at James Madison University.
+
+WeatherBits is currently developing a product named WeatherBitmaps.  
+WeatherBitmaps is a multimedia information system that allows users 
+to get information about current and forecasted weather conditions.
+
+WeatherBits is planning to develop several other products, including: 
+WeatherCell, a system for delivering localized weather information 
+to cellular telephones and handheld computers; WeatherFend, a system 
+that uses localized weather information to predict likely accident sites; 
+WeatherOrKnot, a system for using localized weather information on boats 
+and ships; and WeatherThouGoest, a system for incorporating localized 
+weather information in in-vehicle navigation systems.
+    

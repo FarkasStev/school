@@ -1,0 +1,6 @@
+package weather.visual;
+
+public class WeatherDatumContent
+{
+
+}

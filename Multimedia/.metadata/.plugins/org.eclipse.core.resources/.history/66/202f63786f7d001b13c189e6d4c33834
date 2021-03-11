@@ -1,0 +1,14 @@
+package map.io;
+
+import io.ResourceFinder;
+
+public class BaseMapReader
+{
+  private PolygonReader finder;
+  
+  public BaseMapReader(ResourceFinder finder)
+  {
+    
+  }
+
+}

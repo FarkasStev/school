@@ -1,0 +1,31 @@
+package map.io;
+
+import java.awt.Shape;
+
+import io.ResourceFinder;
+
+public class PolygonReader
+{
+  private ResourceFinder finder;
+
+  public PolygonReader()
+  {
+  }
+  
+  public PolygonReader(ResourceFinder finder)
+  {
+    this.finder = finder;
+  }
+  
+  public Shape read(String name)
+  {
+    if (finder != null)
+    {
+      finder.
+    }
+    
+    
+  }
+ 
+  
+}

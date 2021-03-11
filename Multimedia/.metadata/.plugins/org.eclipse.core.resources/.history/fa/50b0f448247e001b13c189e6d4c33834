@@ -1,0 +1,98 @@
+package gui;
+
+import java.awt.BasicStroke;
+import java.awt.Color;
+import java.awt.Shape;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.swing.JOptionPane;
+
+import io.ResourceFinder;
+import map.io.PolygonReader;
+import map.io.StationLocationReader;
+import resources.Marker;
+import visual.Visualization;
+import visual.VisualizationView;
+import visual.statik.sampled.BufferedImageOpFactory;
+import visual.statik.described.Content;
+import visual.statik.sampled.ContentFactory;
+import weather.WeatherDatum;
+import weather.WeatherObserver;
+import weather.visual.WeatherDatumContent;
+import weather.visual.WeatherDatumContentFactory;
+import weather.visual.WeatherIconReader;
+
+public class StaticWeatherMap extends visual.Visualization implements WeatherObserver
+{
+  private static Color BACKGROUND_COLOR = new Color(204, 204, 255);
+  private Content watermark;
+  private List<WeatherDatumContent> currentContent;
+
+  public StaticWeatherMap(final String useWatermark, final String grayWatermark, final int width,
+      final int height)
+  {
+    super();
+    PolygonReader shapeReader = new PolygonReader();
+    try
+    {
+      Shape shape = shapeReader.read("harrisonburg.map");
+      Content content = new Content();
+      content.set
+      Visualization visualization = new Visualization();
+      VisualizationView view = visualization.getView();
+      view.setBounds(0, 0, WIDTH, HEIGHT - 60);
+      view.setSize(WIDTH, HEIGHT - 60);
+      visualization.add(content);
+      contentPane.add(view);
+    }
+    catch (IOException e)
+    {
+      JOptionPane.showMessageDialog(getGUIComponent(),
+          "There was a problem reading " + "harrisonburg.map", "Error", JOptionPane.ERROR_MESSAGE);
+    }
+    if (useWatermark != null)
+    {
+      ResourceFinder watermarkFinder = ResourceFinder.createInstance(new Marker());
+      ContentFactory cf = new ContentFactory(watermarkFinder);
+      watermark = cf.createContent("logoWeatherBits.png");
+
+      if (grayWatermark != null)
+      {
+        BufferedImageOpFactory factory = BufferedImageOpFactory.createFactory();
+        watermark.setBufferedImageOp(factory.createGrayOp());
+      }
+      watermark.setLocation(width / 2, height - 20);
+      add(watermark);
+    }
+
+    currentContent = new ArrayList<WeatherDatumContent>();
+
+  }
+
+  public void handleWeatherDatum(final WeatherDatum datum)
+  {
+    ResourceFinder rf = ResourceFinder.createInstance(new Marker());
+    StationLocationReader locs = new StationLocationReader(rf);
+    WeatherIconReader imgs = new WeatherIconReader(rf);
+    WeatherDatumContentFactory factory;
+    try
+    {
+      factory = new WeatherDatumContentFactory(locs.read("stations.loc"), imgs.read());
+      currentContent.add(factory.createContent(datum, new Color(255, 0, 0)));
+    }
+    catch (IOException e)
+    {
+      // TODO Auto-generated catch block
+      e.printStackTrace();
+    }
+
+  }
+
+  public void reset()
+  {
+    currentContent.clear();
+  }
+
+}

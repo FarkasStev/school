@@ -1,0 +1,35 @@
+package map.io;
+
+import java.awt.Shape;
+import java.io.InputStream;
+
+import io.ResourceFinder;
+
+
+public class PolygonReader
+{
+  private ResourceFinder finder;
+
+  public PolygonReader()
+  {
+    this(null);
+  }
+  
+  public PolygonReader(ResourceFinder finder)
+  {
+    this.finder = finder;
+  }
+  
+  public Shape read(String name) throws IOException
+  {
+    if (finder != null)
+    {
+      InputStream is = finder.findInputStream(name);
+      BufferedReader in = new BufferedReader(new InputStreamReader(is));
+    }
+    
+    
+  }
+ 
+  
+}

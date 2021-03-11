@@ -1,0 +1,9 @@
+package map.io;
+
+import io.ResourceFinder;
+
+public class PolygonReader
+{
+  private ResourceFinder finder;
+
+}

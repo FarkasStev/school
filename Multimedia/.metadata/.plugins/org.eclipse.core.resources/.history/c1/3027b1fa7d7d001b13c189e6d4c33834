@@ -1,0 +1,28 @@
+package weather.visual;
+
+import java.awt.Image;
+import java.util.Map;
+
+import io.ResourceFinder;
+
+public class WeatherIconReader
+{
+  private static String[] IMAGE_NAMES = {"PartlyCloudy", "Rainy", "Snowy", "Sunny"};
+  private ResourceFinder finder;
+
+  public WeatherIconReader(final ResourceFinder finder)
+  {
+    this.finder = finder;
+  }
+
+  public Map<String, Image> read()
+  {
+    InputStream is;
+    for (int i = 0; i < IMAGE_NAMES.length; i++)
+    {
+      is = rf.findInputStream(IMAGE_NAMES[i]);
+    }
+    
+  }
+
+}

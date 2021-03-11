@@ -1,0 +1,15 @@
+package weather.visual;
+
+import io.ResourceFinder;
+
+public class WeatherIconReader
+{
+  private static String[] IMAGE_NAMES = {"PartlyCloudy", "Rainy", "Snowy", "Sunny"};
+  private ResourceFinder finder;
+
+  public WeatherIconReader(final ResouceFinder finder)
+  {
+
+  }
+
+}

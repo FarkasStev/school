@@ -1,0 +1,24 @@
+package map.io;
+
+import java.awt.Color;
+import java.io.IOException;
+
+import io.ResourceFinder;
+import visual.statik.described.Content;
+
+public class BaseMapReader
+{
+  private PolygonReader finder;
+  
+  public BaseMapReader(ResourceFinder finder)
+  {
+    this.finder = new PolygonReader(finder);
+  }
+  
+  public Content read(String name, Color boundary, Color interior) throws IOException
+  {
+    Content content = new Content(finder.read(name), interior, interior, null);
+    return null;
+  }
+
+}

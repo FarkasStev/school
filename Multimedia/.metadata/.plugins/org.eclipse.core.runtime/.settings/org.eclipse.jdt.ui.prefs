@@ -1,5 +1,7 @@
 content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"/>
 content_assist_number_of_computers=12
+content_assist_proposals_background=34,37,44
+content_assist_proposals_foreground=175,180,186
 eclipse.preferences.version=1
 formatter_profile=_bernstdh
 formatter_settings_version=20
@@ -10,6 +12,7 @@ org.eclipse.jdt.ui.formatterprofiles=<?xml version\="1.0" encoding\="UTF-8" stan
 org.eclipse.jdt.ui.formatterprofiles.version=20
 org.eclipse.jdt.ui.gettersetter.use.is=true
 org.eclipse.jdt.ui.overrideannotation=true
+org.eclipse.jdt.ui.text.custom_code_templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates/>
 spelling_locale_initialized=true
 useAnnotationsPrefPage=true
 useQuickDiffPrefPage=true

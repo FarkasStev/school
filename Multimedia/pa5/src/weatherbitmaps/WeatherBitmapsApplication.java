@@ -1,9 +1,5 @@
 package weatherbitmaps;
 
-import java.awt.BasicStroke;
-import java.awt.Color;
-import java.awt.Paint;
-import java.awt.Shape;
 //Java libraries
 import java.awt.event.*;
 import java.io.*;
@@ -12,14 +8,10 @@ import javax.swing.*;
 //Multimedia libraries
 import app.*;
 import io.*;
-import map.io.PolygonReader;
 //Application libraries
 import weather.*;
 import weather.io.*;
 import resources.Marker;
-import visual.Visualization;
-import visual.VisualizationView;
-import visual.statik.described.Content;
 
 /**
  * An application that displays weather observations and forecasts in a generic way.

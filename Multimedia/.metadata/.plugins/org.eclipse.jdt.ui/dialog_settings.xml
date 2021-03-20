@@ -130,16 +130,19 @@
 	</section>
 	<section name="FatJarPackageWizard">
 		<item key="FatJarPackageWizardPage.ANTSCRIPT_SAVE" value="false"/>
-		<item key="FatJarPackageWizardPage.ANTSCRIPT_LOCATION" value="C:\Users\funny\School\Mutlimedia.xml"/>
+		<item key="FatJarPackageWizardPage.ANTSCRIPT_LOCATION" value="/home/stevenf/school/Multimedia/C:\Users\funny\School\Mutlimedia.xml"/>
 		<item key="FatJarPackageWizardPage.LIBRARY_HANDLING" value="2"/>
-		<item key="FatJarPackageWizardPage.LAUNCH_CONFIGURATION_SELECTION_NAME" value="StaticMapApplication - pa5"/>
-		<item key="FatJarPackageWizardPage.DESTINATION_PATH_SELECTION" value="C:\Users\funny\School\Multimedia\StaticWeatherMap.jar"/>
+		<item key="FatJarPackageWizardPage.LAUNCH_CONFIGURATION_SELECTION_NAME" value="TextApplication (2) - pa6"/>
+		<item key="FatJarPackageWizardPage.DESTINATION_PATH_SELECTION" value="TextApplication2.jar"/>
 		<list key="FatJarPackageWizardPage.DESTINATION_NAMES_ID">
-			<item value="C:\Users\funny\School\Multimedia\StaticWeatherMap.jar"/>
+			<item value="TextApplication2.jar"/>
+			<item value="C:\Users\funny\School\Mutlimedia\TextApplication2.jar"/>
 			<item value="C:\Users\funny\School\Mutlimedia\TextApplication.jar"/>
+			<item value="C:\Users\funny\School\Multimedia\StaticWeatherMap.jar"/>
 			<item value="C:\Users\funny\Downloads\TextApplication.jar"/>
 		</list>
 		<list key="FatJarPackageWizardPage.ANTSCRIPT_LOCATION_HISTORY">
+			<item value="/home/stevenf/school/Multimedia/C:\Users\funny\School\Mutlimedia.xml"/>
 			<item value="C:\Users\funny\School\Mutlimedia.xml"/>
 			<item value=".xml"/>
 		</list>

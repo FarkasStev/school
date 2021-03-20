@@ -8,8 +8,6 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-import javax.swing.JOptionPane;
-
 import io.ResourceFinder;
 import map.io.PolygonReader;
 import map.io.StationLocationReader;
@@ -18,7 +16,6 @@ import visual.statik.sampled.BufferedImageOpFactory;
 import visual.statik.described.Content;
 import visual.statik.sampled.ContentFactory;
 import weather.WeatherDatum;
-import weather.WeatherForecast;
 import weather.WeatherObservation;
 import weather.WeatherObserver;
 import weather.visual.WeatherDatumContent;

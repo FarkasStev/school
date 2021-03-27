@@ -1,10 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="measurement.WeatherForecast"/>
-    <fullyQualifiedTypeName name="java.util.StringTokenizer"/>
-    <fullyQualifiedTypeName name="weather.WeatherSubject"/>
-    <fullyQualifiedTypeName name="weather.io.WeatherForecastReader"/>
-    <fullyQualifiedTypeName name="weather.io.WeatherDatumReader"/>
     <fullyQualifiedTypeName name="weather.io.WeatherObservationReader"/>
     <fullyQualifiedTypeName name="javax.swing.text.html.HTMLDocument.Iterator"/>
     <fullyQualifiedTypeName name="weather.WeatherPattern"/>
@@ -23,22 +18,17 @@
     <fullyQualifiedTypeName name="weather.visual.WeatherDatumContent"/>
     <fullyQualifiedTypeName name="weather.WeatherDatum"/>
     <fullyQualifiedTypeName name="java.util.Map"/>
-    <fullyQualifiedTypeName name="java.awt.geom.Point2D"/>
     <fullyQualifiedTypeName name="auditory.described.Content"/>
-    <fullyQualifiedTypeName name="java.io.BufferedReader"/>
-    <fullyQualifiedTypeName name="java.io.InputStreamReader"/>
     <fullyQualifiedTypeName name="java.io.IOException"/>
     <fullyQualifiedTypeName name="java.awt.geom.Path2D.Float"/>
     <fullyQualifiedTypeName name="java.awt.geom.Path2D"/>
     <fullyQualifiedTypeName name="com.sun.jdi.event.MonitorContendedEnteredEvent"/>
     <fullyQualifiedTypeName name="java.awt.Stroke"/>
-    <fullyQualifiedTypeName name="java.awt.Point"/>
     <fullyQualifiedTypeName name="java.util.HashMap"/>
     <fullyQualifiedTypeName name="java.awt.Graphics2D"/>
     <fullyQualifiedTypeName name="weather.visual.WeatherDatumContentFactory"/>
     <fullyQualifiedTypeName name="io.ResourceFinder"/>
     <fullyQualifiedTypeName name="resources.Marker"/>
-    <fullyQualifiedTypeName name="java.io.InputStream"/>
     <fullyQualifiedTypeName name="javax.imageio.ImageIO"/>
     <fullyQualifiedTypeName name="visual.statik.sampled.ContentFactory"/>
     <fullyQualifiedTypeName name="visual.statik.sampled.Content"/>
@@ -60,4 +50,14 @@
     <fullyQualifiedTypeName name="weather.WeatherForecast"/>
     <fullyQualifiedTypeName name="weather.WeatherObservation"/>
     <fullyQualifiedTypeName name="visual.statik.sampled.TransformableContent"/>
+    <fullyQualifiedTypeName name="visual.dynamic.described.Stage"/>
+    <fullyQualifiedTypeName name="gui.DynamicWeatherMap"/>
+    <fullyQualifiedTypeName name="visual.dynamic.described.DescribedSprite"/>
+    <fullyQualifiedTypeName name="visual.statik.described.AggregateContent"/>
+    <fullyQualifiedTypeName name="java.io.BufferedReader"/>
+    <fullyQualifiedTypeName name="java.io.InputStreamReader"/>
+    <fullyQualifiedTypeName name="java.io.InputStream"/>
+    <fullyQualifiedTypeName name="java.io.BufferedInputStream"/>
+    <fullyQualifiedTypeName name="java.awt.geom.Point2D"/>
+    <fullyQualifiedTypeName name="java.awt.Point"/>
 </qualifiedTypeNameHistroy>

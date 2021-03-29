@@ -99,14 +99,14 @@
 		<item key="jarOptionsWizardPage.BUILD_IF_NEEDED" value="true"/>
 		<item key="jarOptionsWizardPage.SAVE_DESCRIPTION" value="false"/>
 		<item key="jarOptionsWizardPage.DESCRIPTION_LOCATION" value=""/>
-		<item key="JarManifestWizardPage.GENERATE_MANIFEST" value="false"/>
+		<item key="JarManifestWizardPage.GENERATE_MANIFEST" value="true"/>
 		<item key="JarManifestWizardPage.SAVE_MANIFEST" value="false"/>
 		<item key="JarManifestWizardPage.REUSE_MANIFEST" value="false"/>
 		<item key="JarManifestWizardPage.MANIFEST_LOCATION" value="/pa4/TextApplication.mf"/>
 		<item key="JarManifestWizardPage.SEAL_JAR" value="false"/>
 		<list key="JarPackageWizardPage.DESTINATION_NAMES_ID">
-			<item value="examplesb.jar"/>
 			<item value="examples.jar"/>
+			<item value="examplesb.jar"/>
 			<item value="DynamicMapApplication.jar"/>
 			<item value="TextApplication.jar"/>
 			<item value="pa4.jar"/>

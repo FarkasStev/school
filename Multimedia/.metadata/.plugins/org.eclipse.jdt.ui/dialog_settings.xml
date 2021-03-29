@@ -105,6 +105,7 @@
 		<item key="JarManifestWizardPage.MANIFEST_LOCATION" value="/pa4/TextApplication.mf"/>
 		<item key="JarManifestWizardPage.SEAL_JAR" value="false"/>
 		<list key="JarPackageWizardPage.DESTINATION_NAMES_ID">
+			<item value="examples.jar"/>
 			<item value="DynamicMapApplication.jar"/>
 			<item value="TextApplication.jar"/>
 			<item value="pa4.jar"/>
@@ -134,8 +135,9 @@
 		<item key="FatJarPackageWizardPage.ANTSCRIPT_LOCATION" value="/home/stevenf/school/Multimedia/C:\Users\funny\School\Mutlimedia.xml"/>
 		<item key="FatJarPackageWizardPage.LIBRARY_HANDLING" value="2"/>
 		<item key="FatJarPackageWizardPage.LAUNCH_CONFIGURATION_SELECTION_NAME" value="DynamicMapApplication - pa7"/>
-		<item key="FatJarPackageWizardPage.DESTINATION_PATH_SELECTION" value="DynamicMapApplication.jar"/>
+		<item key="FatJarPackageWizardPage.DESTINATION_PATH_SELECTION" value="examples.jar"/>
 		<list key="FatJarPackageWizardPage.DESTINATION_NAMES_ID">
+			<item value="examples.jar"/>
 			<item value="DynamicMapApplication.jar"/>
 			<item value="DynamicWeatherMap.jar"/>
 			<item value="TextApplication2.jar"/>
